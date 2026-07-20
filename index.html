@@ -1,0 +1,30 @@
+// 个性化素材和离线邮件设置集中在这里，修改后刷新 index.html 即可。
+window.DATE_INVITATION_CONFIG = {
+  // 邀请页使用老公照片，最终页使用玲宝照片。
+  invitePhoto: "./assets/invite-photo.jpg",
+  finalPhoto: "./assets/final-photo.jpg",
+
+  // 拍立得照片。把照片放入 assets 后，可在这里修改文件名和背面文字。
+  memoryPhotos: [
+    { src: "./assets/landscape-1.jpg", caption: "有些晚霞只看一眼，就会让人想起某个特别的人。" },
+    { src: "./assets/memory-portrait-1.jpg", caption: "镜头里不只是两个人，是我想反复收藏的日常。" },
+    { src: "./assets/landscape-2.jpg", caption: "天空每次换一种颜色，我就会多一种想和你分享的理由。" },
+    { src: "./assets/memory-portrait-2.jpg", caption: "下一张合照，也想继续站在你身边。" }
+  ],
+
+  // “不要”按钮逃跑多少次后恢复平静，最少为 5 次。
+  noEscapeCount: 9,
+
+  // 最终页的悄悄话；没有录音时，浏览器会朗读这句话作为兜底。
+  secretMessage: "你知道嘛宝，跟你约会是我干过最开心的事情。",
+
+  // 可选音频素材。放入对应文件即可；留空或文件不存在时会使用内置轻音乐和音效。
+  backgroundMusic: "./assets/background-music.mp3",
+  voiceMessage: "./assets/voice-message.mp3",
+
+  // 地图搜索使用的城市，可留空。填写后能让“打开地点”的结果更准确。
+  mapCity: "",
+
+  // 不经过第三方服务；最终页会打开本机邮件客户端并预填完整约会计划。
+  emailRecipient: "1315744936@qq.com"
+};
